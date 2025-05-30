@@ -1,11 +1,8 @@
 package com.example.demo.config;
 
 import com.zaxxer.hikari.HikariDataSource;
-import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import javax.sql.DataSource;
 
 @Configuration
 public class DataSourceConfig {
@@ -33,7 +30,7 @@ public class DataSourceConfig {
 	{
 		HikariDataSource dataSource = new HikariDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/testdb");
+		dataSource.setJdbcUrl("jdbc:mysql://54.180.222.204:3306/testdb");
 		dataSource.setUsername("dbconn");
 		dataSource.setPassword("Zhfldk11!");
 		 
